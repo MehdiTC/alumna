@@ -17,20 +17,22 @@ export default function Header() {
           </Link>
           
           <nav className="hidden md:flex items-center space-x-8">
-            <Link href="#features" className="text-gray-600 hover:text-indigo-600 transition-colors">
+            <Link href="/#features" className="text-gray-600 hover:text-indigo-600 transition-colors">
               Features
             </Link>
-            <Link href="#demo-form" className="text-gray-600 hover:text-indigo-600 transition-colors">
+            <Link href="/#demo-form" className="text-gray-600 hover:text-indigo-600 transition-colors">
               Demo
             </Link>
-            <Link href="#pricing" className="text-gray-600 hover:text-indigo-600 transition-colors">
+            <Link href="/#pricing" className="text-gray-600 hover:text-indigo-600 transition-colors">
               Pricing
             </Link>
             <Link href="/terms-and-conditions" className="text-gray-600 hover:text-indigo-600 transition-colors">
               Terms & Conditions
             </Link>
-            <Link href="/login" className="text-indigo-600 hover:text-indigo-700 font-medium">
-              Login
+            <Link href="/setup" className="ml-2">
+              <button className="bg-indigo-600 text-white font-semibold rounded-full px-6 py-2 shadow-md hover:bg-indigo-700 transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                Set Up
+              </button>
             </Link>
           </nav>
         </div>

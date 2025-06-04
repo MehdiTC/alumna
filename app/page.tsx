@@ -152,7 +152,7 @@ export default function Home() {
                   Book Demo
                 </button>
               </a>
-              <a href="/checkout">
+              <a href="/setup">
                 <button className="bg-emerald-500 text-white font-semibold rounded-full px-8 py-3 shadow-md hover:bg-emerald-600 transition-transform duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-emerald-400">
                   Set Up Now
                 </button>
@@ -235,7 +235,7 @@ export default function Home() {
             <p className="text-lg mb-8">
               Simple, transparent pricing. Cancel anytime.
             </p>
-            <Button href="/checkout" variant="primary">
+            <Button href="/setup" variant="primary">
               Set up your directory
             </Button>
           </div>
