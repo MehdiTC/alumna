@@ -24,7 +24,7 @@ const features = [
     description: 'Modern, mobile-friendly profiles with real-time updates and search.',
     image: (
       <img
-        src="/demo/feature2.png"
+        src="/demo/view-profile.png"
         alt="View Fellow Alumni Profiles"
         className="bg-gray-50 rounded-lg shadow-lg object-cover w-full h-[220px] md:w-[360px] md:h-[220px]"
       />
@@ -35,7 +35,7 @@ const features = [
     description: 'Access your alumni data from a clean admin dashboard. View and edit tables of profiles, download CSV exports, add custom fields, and manage user accounts—all in one place.',
     image: (
       <img
-        src="/demo/feature3.png"
+        src="/demo/backend.png"
         alt="Create and Manage Profiles Instantly"
         className="bg-gray-50 rounded-lg shadow-lg object-cover w-full h-[220px] md:w-[360px] md:h-[220px]"
       />
