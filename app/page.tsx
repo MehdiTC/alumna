@@ -154,7 +154,7 @@ export default function Home() {
               </a>
               <a href="/checkout">
                 <button className="bg-emerald-500 text-white font-semibold rounded-full px-8 py-3 shadow-md hover:bg-emerald-600 transition-transform duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-emerald-400">
-                  Go to Payment
+                  Set Up Now
                 </button>
               </a>
             </motion.div>
@@ -236,7 +236,7 @@ export default function Home() {
               Simple, transparent pricing. Cancel anytime.
             </p>
             <Button href="/checkout" variant="primary">
-              Buy Now
+              Set up your directory
             </Button>
           </div>
           <div className="flex justify-center">
@@ -247,24 +247,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Ready to get started Section */}
-      <section className="py-24 bg-white">
-        <div className="w-full grid md:grid-cols-2 gap-16 items-center px-8 md:px-16">
-          <div>
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Ready to get started?
-            </h2>
-            <Button href="/contact" variant="secondary">
-              Schedule a demo
-            </Button>
-          </div>
-          <div className="flex justify-center">
-            <div className="w-full max-w-md h-80 bg-gray-100 rounded-2xl shadow-lg flex items-center justify-center">
-              <span className="text-gray-400">[Demo Mockup]</span>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Footer */}
       <footer className="bg-gray-800 text-gray-400 py-8">
