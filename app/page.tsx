@@ -12,99 +12,33 @@ const features = [
     title: 'Secure Magic-Link Login',
     description: 'No passwords to remember. Members receive a secure login link via email.',
     image: (
-      <div className="bg-gray-50 rounded-lg shadow-lg overflow-hidden flex items-center justify-center w-full h-[220px] md:w-[360px] md:h-[220px]">
-        <div className="w-[200px] h-[140px] bg-white rounded-2xl shadow-md flex flex-col items-center justify-center border border-gray-100">
-          <div className="w-10 h-10 bg-indigo-200 rounded-full flex items-center justify-center mb-2">
-            <svg width="24" height="24" fill="none" stroke="#7c3aed" strokeWidth="2" viewBox="0 0 24 24"><path d="M16 12v1a4 4 0 01-8 0v-1"/><rect width="20" height="14" x="2" y="6" rx="2"/><path d="M8 10h.01M16 10h.01"/></svg>
-          </div>
-          <div className="text-xs text-gray-500 mb-1">Email Notification</div>
-          <div className="w-36 h-8 bg-indigo-600 rounded-full flex items-center justify-center text-white font-semibold text-sm cursor-pointer shadow hover:bg-indigo-700 transition">Click here to sign in</div>
-        </div>
-      </div>
+      <img
+        src="/demo/password.png"
+        alt="Secure Magic-Link Login"
+        className="bg-gray-50 rounded-lg shadow-lg object-cover w-full h-[220px] md:w-[360px] md:h-[220px]"
+      />
     )
   },
   {
     title: 'View Fellow Alumni Profiles',
     description: 'Modern, mobile-friendly profiles with real-time updates and search.',
     image: (
-      <div className="bg-gray-50 rounded-lg shadow-lg overflow-hidden flex items-center justify-center w-full h-[220px] md:w-[360px] md:h-[220px]">
-        <div className="w-full h-full flex flex-col md:flex-row gap-2 p-4">
-          {/* Desktop Directory */}
-          <div className="hidden md:grid grid-cols-3 gap-2 flex-1">
-            {[1,2,3,4,5,6].map(i => (
-              <div key={i} className="bg-white rounded-xl shadow p-2 flex flex-col items-center">
-                <div className="w-10 h-10 bg-gray-200 rounded-full mb-2" />
-                <div className="font-semibold text-sm">Jane Doe</div>
-                <div className="text-xs text-gray-500 mb-1">Consulting</div>
-                <div className="flex flex-wrap gap-1">
-                  <span className="bg-indigo-100 text-indigo-700 text-xs rounded px-2">Tech</span>
-                  <span className="bg-indigo-100 text-indigo-700 text-xs rounded px-2">Finance</span>
-                </div>
-              </div>
-            ))}
-          </div>
-          {/* Mobile Directory */}
-          <div className="md:hidden grid grid-cols-2 gap-2 w-full">
-            {[1,2,3,4].map(i => (
-              <div key={i} className="bg-white rounded-xl shadow p-2 flex flex-col items-center">
-                <div className="w-10 h-10 bg-gray-200 rounded-full mb-2" />
-                <div className="font-semibold text-sm">Jane Doe</div>
-                <div className="text-xs text-gray-500 mb-1">Finance</div>
-                <div className="flex flex-wrap gap-1">
-                  <span className="bg-indigo-100 text-indigo-700 text-xs rounded px-2">Tech</span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
+      <img
+        src="/demo/feature2.png"
+        alt="View Fellow Alumni Profiles"
+        className="bg-gray-50 rounded-lg shadow-lg object-cover w-full h-[220px] md:w-[360px] md:h-[220px]"
+      />
     )
   },
   {
     title: 'Create and Manage Profiles Instantly',
     description: 'Access your alumni data from a clean admin dashboard. View and edit tables of profiles, download CSV exports, add custom fields, and manage user accounts—all in one place.',
     image: (
-      <div className="bg-gray-50 rounded-lg shadow-lg overflow-hidden flex items-center justify-center w-full h-[220px] md:w-[360px] md:h-[220px]">
-        <div className="w-[320px] h-[160px] bg-white rounded-xl shadow flex">
-          {/* Sidebar */}
-          <div className="w-12 bg-gray-100 flex flex-col items-center py-4 gap-4 border-r">
-            <div className="w-8 h-8 bg-indigo-100 rounded-lg flex items-center justify-center"><svg width="20" height="20" fill="none" stroke="#7c3aed" strokeWidth="2" viewBox="0 0 24 24"><rect width="16" height="16" x="4" y="4" rx="2"/></svg></div>
-            <div className="w-8 h-8 bg-gray-200 rounded-lg" />
-            <div className="w-8 h-8 bg-gray-200 rounded-lg" />
-          </div>
-          {/* Table */}
-          <div className="flex-1 p-3 overflow-x-auto">
-            <div className="flex items-center gap-2 mb-2">
-              <button className="bg-indigo-600 text-white text-xs px-3 py-1 rounded shadow hover:bg-indigo-700">Export CSV</button>
-              <button className="bg-gray-200 text-xs px-2 py-1 rounded">Add Field</button>
-              <button className="bg-gray-200 text-xs px-2 py-1 rounded">Filter</button>
-              <button className="bg-gray-200 text-xs px-2 py-1 rounded">Edit</button>
-            </div>
-            <table className="w-full text-xs">
-              <thead>
-                <tr className="bg-gray-50">
-                  <th className="font-bold text-gray-700 p-1 text-left">Name</th>
-                  <th className="font-bold text-gray-700 p-1 text-left">Email</th>
-                  <th className="font-bold text-gray-700 p-1 text-left">Pledge Class</th>
-                  <th className="font-bold text-gray-700 p-1 text-left">Major</th>
-                  <th className="font-bold text-gray-700 p-1 text-left">Location</th>
-                </tr>
-              </thead>
-              <tbody>
-                {[1,2,3].map(i => (
-                  <tr key={i} className={i%2 ? 'bg-white' : 'bg-gray-50'}>
-                    <td className="p-1">Jane Doe</td>
-                    <td className="p-1">jane@email.com</td>
-                    <td className="p-1">Alpha</td>
-                    <td className="p-1">CS</td>
-                    <td className="p-1">NYC</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
+      <img
+        src="/demo/feature3.png"
+        alt="Create and Manage Profiles Instantly"
+        className="bg-gray-50 rounded-lg shadow-lg object-cover w-full h-[220px] md:w-[360px] md:h-[220px]"
+      />
     )
   }
 ]

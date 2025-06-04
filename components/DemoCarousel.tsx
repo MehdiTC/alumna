@@ -10,11 +10,11 @@ const slides = [
     caption: 'Explore a Beautiful Directory'
   },
   {
-    image: '/demo/add-members.png',
+    image: '/demo/profile-modal.png',
     caption: 'View Fellow Alumni Profiles'
   },
   {
-    image: '/demo/events.png',
+    image: '/demo/join-modal.png',
     caption: 'Create and Manage Profiles Instantly'
   }
 ]
