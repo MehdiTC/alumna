@@ -160,18 +160,21 @@ export default function Home() {
       </section>
 
       {/* Pricing Section - Left headline, right mockup */}
-      <section id="pricing" className="py-20 bg-blue-900 text-white">
-        <div className="flex flex-col items-center justify-center px-4">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">Set up your directory for free</h2>
-          <p className="text-lg mb-8 text-center max-w-2xl">
-            No payment required to get started. You only pay if you decide to launch your directory. <br />
-            Click below to begin your free onboarding—no credit card needed.
+      <section id="pricing" className="py-24 bg-blue-900 text-white w-full flex items-center justify-center">
+        <div className="w-full max-w-2xl mx-auto flex flex-col items-center text-center px-4 md:px-8">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            Set up your directory for <span className="text-emerald-300">free</span>
+          </h2>
+          <p className="text-lg mb-8">
+            No payment required to get started. <br className="hidden md:block" />
+            You only pay if you decide to launch your directory.
           </p>
           <a href="/setup">
-            <button className="bg-indigo-600 text-white font-semibold rounded-full px-8 py-3 shadow-md hover:bg-indigo-700 transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-500">
+            <button className="bg-indigo-600 text-white font-semibold rounded-full px-10 py-4 shadow-md hover:bg-indigo-700 transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-500 text-lg">
               Set Up
             </button>
           </a>
+          <p className="mt-4 text-sm text-emerald-200">No credit card required.</p>
         </div>
       </section>
 
