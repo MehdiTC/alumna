@@ -23,12 +23,19 @@ This is the marketing and onboarding site for [alumna.in](https://alumna.in), a 
 ---
 
 ## 🗂️ Folder Structure
+
 ├── app/               # Next.js routes
+
 ├── components/        # UI blocks like Hero, CTA, Footer
+
 ├── public/            # Images, favicon, assets
+
 ├── styles/            # Tailwind & global styles
+
 ├── package.json       # Project config
+
 ├── tailwind.config.ts # Tailwind settings
+
 └── README.md
 
 ---
