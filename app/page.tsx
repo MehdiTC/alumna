@@ -160,27 +160,23 @@ export default function Home() {
       </section>
 
       {/* Pricing Section - Left headline, right mockup */}
-      <section id="pricing" className="py-24 bg-blue-900 text-white">
-        <div className="w-full grid md:grid-cols-2 gap-16 items-center px-8 md:px-16">
-          <div>
-            <h2 className="text-4xl font-bold mb-4">
-              All-in for just <span className="text-blue-300">$20 / month</span>
-            </h2>
-            <p className="text-lg mb-8">
-              Simple, transparent pricing. Cancel anytime.
-            </p>
-            <Button href="/setup" variant="primary">
-              Set up your directory
-            </Button>
-          </div>
-          <div className="flex justify-center">
-            <div className="w-full max-w-md h-80 bg-white/10 rounded-2xl shadow-2xl flex items-center justify-center">
-              <span className="text-white/60">[Pricing Mockup]</span>
-            </div>
-          </div>
+      <section id="pricing" className="py-24 bg-blue-900 text-white w-full flex items-center justify-center">
+        <div className="w-full max-w-2xl mx-auto flex flex-col items-center text-center px-4 md:px-8">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            Set up your directory for <span className="text-emerald-300">free</span>
+          </h2>
+          <p className="text-lg mb-8">
+            No payment required to get started. <br className="hidden md:block" />
+            You only pay if you decide to launch your directory.
+          </p>
+          <a href="/setup">
+            <button className="bg-indigo-600 text-white font-semibold rounded-full px-10 py-4 shadow-md hover:bg-indigo-700 transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-500 text-lg">
+              Set Up
+            </button>
+          </a>
+          <p className="mt-4 text-sm text-emerald-200">No credit card required.</p>
         </div>
       </section>
-
 
       {/* Footer */}
       <footer className="bg-gray-800 text-gray-400 py-8">
