@@ -160,27 +160,20 @@ export default function Home() {
       </section>
 
       {/* Pricing Section - Left headline, right mockup */}
-      <section id="pricing" className="py-24 bg-blue-900 text-white">
-        <div className="w-full grid md:grid-cols-2 gap-16 items-center px-8 md:px-16">
-          <div>
-            <h2 className="text-4xl font-bold mb-4">
-              All-in for just <span className="text-blue-300">$20 / month</span>
-            </h2>
-            <p className="text-lg mb-8">
-              Simple, transparent pricing. Cancel anytime.
-            </p>
-            <Button href="/setup" variant="primary">
-              Set up your directory
-            </Button>
-          </div>
-          <div className="flex justify-center">
-            <div className="w-full max-w-md h-80 bg-white/10 rounded-2xl shadow-2xl flex items-center justify-center">
-              <span className="text-white/60">[Pricing Mockup]</span>
-            </div>
-          </div>
+      <section id="pricing" className="py-20 bg-blue-900 text-white">
+        <div className="flex flex-col items-center justify-center px-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">Set up your directory for free</h2>
+          <p className="text-lg mb-8 text-center max-w-2xl">
+            No payment required to get started. You only pay if you decide to launch your directory. <br />
+            Click below to begin your free onboarding—no credit card needed.
+          </p>
+          <a href="/setup">
+            <button className="bg-indigo-600 text-white font-semibold rounded-full px-8 py-3 shadow-md hover:bg-indigo-700 transition-colors focus:outline-none focus:ring-2 focus:ring-indigo-500">
+              Set Up
+            </button>
+          </a>
         </div>
       </section>
-
 
       {/* Footer */}
       <footer className="bg-gray-800 text-gray-400 py-8">
